@@ -1,7 +1,6 @@
 .landing-page {
     height: 90vh;
     width: 100vw;
-    /* margin-top: 1em; */
     padding: 10px;
 
     display: flex;
@@ -32,62 +31,6 @@
     grid-template-rows: repeat(10, 0.1fr);
     grid-template-columns: repeat(10, 0.1fr);
 
-}
-
-.right-landing {
-    height: 100%;
-    width: 35%;
-    min-width: 20rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.right-landing input[type="text"] {
-    width: 100%;
-    max-width: 300px;
-    height: 40px;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #AA767C;
-    border-radius: 5px;
-    background-color: #FFF;
-    color: #333;
-    transition: border-color 0.3s ease;
-}
-
-.right-landing input[type="text"]:focus {
-    outline: none;
-    border-color: #8B5D63;
-    box-shadow: 0 0 5px rgba(170, 118, 124, 0.5);
-}
-
-.right-landing input[type="text"]::placeholder {
-    color: #999;
-}
-
-.right-landing button {
-    width: 5em;
-    height: 40px;
-    font-family: 'Abril Fatface', serif;
-    font-size: 24px;
-    background-color: #AA767C;
-    color: #EDD4B2;
-    border-radius: 3px;
-    border: 1px solid black;
-    box-shadow: 2px 3px black;
-
-    transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.right-landing button:hover {
-    background-color: black;
-    box-shadow: none;
-    transform: translate(2px, 3px);
 }
 
 .landing-img {
@@ -163,4 +106,60 @@
     grid-area: 4 / 7 / 8 / 10;
     border: 2px solid white;
     border-radius: 3px;
+}
+
+.right-landing {
+    height: 100%;
+    width: 35%;
+    min-width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.right-landing input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #AA767C;
+    border-radius: 5px;
+    background-color: #e4ccaa;
+    color: #AA767C;
+    transition: border-color 0.3s ease;
+}
+
+.right-landing input[type="text"]:focus {
+    outline: none;
+    border-color: #8B5D63;
+    box-shadow: 0 0 5px rgba(170, 118, 124, 0.5);
+}
+
+.right-landing input[type="text"]::placeholder {
+    color: #999;
+}
+
+.right-landing button {
+    width: 5em;
+    height: 40px;
+    font-family: 'Abril Fatface', serif;
+    font-size: 24px;
+    background-color: #AA767C;
+    color: #EDD4B2;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 2px 3px black;
+
+    transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.right-landing button:hover {
+    background-color: black;
+    box-shadow: none;
+    transform: translate(2px, 3px);
 }
