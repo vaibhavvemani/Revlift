@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Red+Hat+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-bottom:#AA767C 3px solid;
+    padding: 5px;
+    width: 100vw;
+    height: 10vh;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.leftNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 8em;
+
+    background-color: #AA767C;
+    color: #EDD4B2;
+    border: 1px solid black;
+    box-shadow: 1px 2px black;
+    border-radius: 12px;
+    font-size: 18px;
+
+    transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.leftNav:hover {
+    /* background-color: #242424; */
+    font-weight: bold;
+    transform: translateY(-2px);
+}
+.leftNav img {
+    border-left: 1px solid black;
+    padding-left: 6px;
+}
+
+.rightNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-width: 12em;
+    max-height: 40px;
+}
+
+.logo {
+    display: flex;
+    margin-inline: 10%;
+    gap: 5px;
+    place-items: center;
+}
+
+.logo h1 {
+    font-family: 'Abril Fatface', serif;
+    transform: translateY(-2px);
+}
+
+.carIcon img{
+    max-width: 5em;
+    max-height: 5em;
+    padding-right: 8px;
+    border-right: 2px solid black;
+}
+
+.catalogueButton {
+    min-width: 4em;
+    min-height: 28px;
+
+    background-color: #AA767C;
+    color: #EDD4B2;
+    border: 0;
+    font-size: 18px;
+}
+
+.headerIcon {
+    background-repeat: no-repeat;
+    transition: transform 0.1s cubic-bezier(0.3, 0.44, 0.81, 1.28);
+}
+.headerIcon:hover {
+    transform: translateY(-2px);
+}
+
+.wishlistIcon {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.accountIcon {
+    max-width: 30px;
+    max-height: 30px;   
+}
+
+.searchIcon {
+    max-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding-inline: 6px;
+    box-shadow: 1px 2px black;
+
+}
+.searchBar {
+    max-width: 7em;
+    max-height: 30px;
+    background-color: #EDD4B2;
+    border: 0;
+    border-radius: 12px;
+    padding: 4px;
+    outline: none;
+    color:#AA767C;
+}
