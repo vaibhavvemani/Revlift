@@ -45,13 +45,14 @@ function LeftLanding() {
 function RightLanding() {
     return (
         <div className="right-landing">
+
             <div className="search-box">
                 <input type="text" />
                 <button>Search</button>
             </div>
 
-            <div className="car-container">
-                
+            <div className="search-result-container">
+                <Image src={'/OUPUT.png'} alt='OUPUT' className='search-result-box' width={643} height={249} />
             </div>
         </div>
     )

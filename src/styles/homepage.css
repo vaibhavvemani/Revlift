@@ -130,6 +130,7 @@
     border: 2px solid #AA767C;
     border-radius: 5px;
     background-color: #e4ccaa;
+    box-shadow: 2px 3px black;
     color: #AA767C;
     transition: border-color 0.3s ease;
 }
@@ -162,4 +163,20 @@
     background-color: black;
     box-shadow: none;
     transform: translate(2px, 3px);
+}
+
+.search-box {
+    display: flex;
+}
+
+.search-result-container {
+    min-width: 640px;
+    min-height: 250px;
+    border: 2px solid #AA767C;
+    border-radius: 5px;
+}
+
+.search-result-box {
+    min-width: 230px;
+    min-height: 230px;
 }
