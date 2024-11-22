@@ -1,8 +1,10 @@
 import React from 'react'
+import CarSearch from '@/components/CarSearch'
 
-export default async function Car( {params} ) {
-    const slug = (await params).car
-    return (
-        <h1>{slug}</h1>
-    )
+const page = () => {
+  return (
+    <CarSearch />
+  )
 }
+
+export default page
