@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import '../styles/homepage.css'
+import CarSearch from './CarSearch'
 
 function LeftLanding() {
     return (
@@ -47,7 +48,7 @@ function RightLanding() {
         <div className="right-landing">
 
             <div className="search-box">
-                <input type="text" />
+                < CarSearch />
                 <button>Search</button>
             </div>
 
