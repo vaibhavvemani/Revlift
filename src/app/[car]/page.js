@@ -1,3 +1,4 @@
+'use server'
 import React from 'react'
 import CarSearch from '@/components/CarSearch'
 const page = () => {
