@@ -10,3 +10,8 @@ body {
   margin: 0;
 }
 
+:root {
+  --main: #EDD4B2;
+  --accent: #AA767C;
+}
+

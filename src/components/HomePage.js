@@ -49,7 +49,6 @@ function RightLanding() {
 
             <div className="search-box">
                 < CarSearch />
-                <button>Search</button>
             </div>
 
             <div className="search-result-container">

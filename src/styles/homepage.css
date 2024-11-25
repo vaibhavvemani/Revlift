@@ -20,7 +20,7 @@
 }
 
 .gallery-frame {
-    background-color: #EDD4B2;  
+    background-color: var(--main);  
     height: 90%;
     width: 100%;
     min-width: 20rem;
@@ -127,11 +127,11 @@
     height: 40px;
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #AA767C;
+    border: 2px solid var(--accent);
     border-radius: 5px;
     background-color: #e4ccaa;
     box-shadow: 2px 3px black;
-    color: #AA767C;
+    color: var(--accent);
     transition: border-color 0.3s ease;
 }
 
@@ -150,8 +150,8 @@
     height: 40px;
     font-family: 'Abril Fatface', serif;
     font-size: 24px;
-    background-color: #AA767C;
-    color: #EDD4B2;
+    background-color: var(--accent);
+    color: var(--main);
     border-radius: 3px;
     border: 1px solid black;
     box-shadow: 2px 3px black;
@@ -172,7 +172,7 @@
 .search-result-container {
     min-width: 640px;
     min-height: 250px;
-    border: 2px solid #AA767C;
+    border: 2px solid var(--accent);
     border-radius: 5px;
 }
 
