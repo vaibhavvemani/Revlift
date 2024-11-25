@@ -12,7 +12,7 @@ export default function CarSearch() {
         async function fetchData() {
             const {data, error} = await createClient()
                 .from('testloader')
-                .select('car_name')
+                .select()
             setData(data)
         }
         fetchData()
@@ -29,12 +29,16 @@ export default function CarSearch() {
         }
     }, [search, cars]);
 
+    function searchCar(car) {
+        window.open(`/${car}`, '_blank')
+    }
+
     return (
         <div>
             <input type="text" placeholder="Search for a car" value={search} onChange={(e) => {setSearch(e.target.value)}}/>
             <ul>
                 {filteredCars.map((car) => (
-                    <li key={car.id} onClick={() => alert(`You selected ${car.car_name}`)}>{car.car_name}</li>
+                    <li key={car.id} onClick={() => {searchCar(car.car_name)} }>{car.car_name}</li>
                 ))}
             </ul>
         </div>

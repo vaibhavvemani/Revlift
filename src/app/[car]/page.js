@@ -1,9 +1,11 @@
-'use server'
 import React from 'react'
 import CarSearch from '@/components/CarSearch'
-const page = () => {
+const page = async ( {params} ) => {
+  const slug = await (params)
   return (
-    <CarSearch />
+    <>
+      <p>{slug.car}</p>
+    </>
   )
 }
 
