@@ -1,10 +1,9 @@
-import React from 'react'
-import CarSearch from '@/components/CarSearch'
+import { CarDisplay } from '@/components/CarDisplay'
 const page = async ( {params} ) => {
   const slug = await (params)
   return (
     <>
-      <p>{slug.car}</p>
+      <CarDisplay car={decodeURI(slug.car)} />
     </>
   )
 }
