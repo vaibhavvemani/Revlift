@@ -8,23 +8,21 @@ export const CarDisplay = ( props ) => {
 
   useEffect(() => {
     async function fetchData() {
-      const {data, error} = await createClient()
+      const { data: fetchedData, error } = await createClient()
         .from('testloader')
         .select()
-        .eq('car_name', props.car)
-
-      setData(data)
+        // .eq('car_name', props.car)
+      setData(fetchedData)
     }
     fetchData()
-  }, [])
+  }, [props.car])
 
   console.log(data)
 
   return (
     <>
       <p>{props.car}</p>
-      <p>Car: {data.car_name}</p>
-
+      <p>Car: {data.length > 0 ? data[0].car_name : 'No data found'}</p>
     </>
   )
 }
