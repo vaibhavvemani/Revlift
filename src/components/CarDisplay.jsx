@@ -8,21 +8,29 @@ export const CarDisplay = ( props ) => {
 
   useEffect(() => {
     async function fetchData() {
+      // const car = await props.car
       const { data: fetchedData, error } = await createClient()
         .from('testloader')
         .select()
-        // .eq('car_name', props.car)
+        .eq('car_name', props.car)
       setData(fetchedData)
     }
     fetchData()
   }, [props.car])
 
-  console.log(data)
 
   return (
     <>
-      <p>{props.car}</p>
-      <p>Car: {data.length > 0 ? data[0].car_name : 'No data found'}</p>
+      <h1>{props.car}</h1>
+      <ul>
+        {data.map((car, index) => (
+          <li key={index}>
+            <h2>{car.car_name}</h2>
+            <p>{car.car_description}</p>
+            <img src={car.car_image} alt={car.car_name} />
+          </li>
+        ))}
+      </ul>
     </>
   )
 }
