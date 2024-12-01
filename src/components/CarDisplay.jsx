@@ -10,9 +10,9 @@ export const CarDisplay = ( props ) => {
     async function fetchData() {
       // const car = await props.car
       const { data: fetchedData, error } = await createClient()
-        .from('testloader')
+        .from('cars')
         .select()
-        .eq('car_name', props.car)
+        .eq('name', props.car)
       setData(fetchedData)
     }
     fetchData()
@@ -21,13 +21,12 @@ export const CarDisplay = ( props ) => {
 
   return (
     <>
-      <h1>{props.car}</h1>
       <ul>
         {data.map((car, index) => (
           <li key={index}>
-            <h2>{car.car_name}</h2>
-            <p>{car.car_description}</p>
-            <img src={car.car_image} alt={car.car_name} />
+            <h2>{car.name}</h2>
+            <p>{car.description}</p>
+            <img src={car.car_image} alt={car.name} />
           </li>
         ))}
       </ul>

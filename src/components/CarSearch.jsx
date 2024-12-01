@@ -12,8 +12,8 @@ export default function CarSearch() {
     useEffect(() => {
         async function fetchData() {
             const {data, error} = await createClient()
-                .from('testloader')
-                .select('car_name, car_brand')
+                .from('cars')
+                .select('name, company')
             setData(data)
         }
         fetchData()
@@ -24,7 +24,7 @@ export default function CarSearch() {
             setFilteredCars([]);
         } else {
             const results = cars.filter((car) =>
-                car.car_name.toLowerCase().includes(search.toLowerCase()) || car.car_brand.toLowerCase().includes(search.toLowerCase())
+                car.name.toLowerCase().includes(search.toLowerCase()) || car.company.toLowerCase().includes(search.toLowerCase())
             );
             setFilteredCars(results);
         }
@@ -39,7 +39,7 @@ export default function CarSearch() {
             <input type="text" placeholder="Search for a car" value={search} onChange={(e) => {setSearch(e.target.value)}}/>
             <ul className="search-list">
                 {filteredCars.map((car) => (
-                    <li className='search-list-item' key={car.id} onClick={() => {searchCar(car.car_name)} }>{car.car_brand}: {car.car_name}</li>
+                    <li className='search-list-item' key={car.id} onClick={() => {searchCar(car.name)} }>{car.company}: {car.name}</li>
                 ))}
             </ul>
         </div>

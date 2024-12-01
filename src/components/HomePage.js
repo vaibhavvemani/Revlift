@@ -51,9 +51,9 @@ function RightLanding() {
                 < CarSearch />
             </div>
 
-            <div className="search-result-container">
+            {/* <div className="search-result-container">
                 <Image src={'/OUPUT.png'} alt='OUPUT' className='search-result-box' width={643} height={249} />
-            </div>
+            </div> */}
         </div>
     )
 }
@@ -61,7 +61,7 @@ function RightLanding() {
 const HomePage = () => {
   return (
     <div className="landing-page">
-        <LeftLanding />
+        {/* <LeftLanding /> */}
         <RightLanding />
     </div>
   )
