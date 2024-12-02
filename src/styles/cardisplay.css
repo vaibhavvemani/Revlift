@@ -1,0 +1,7 @@
+.display-container {
+    background-color: var(--main);
+}
+
+.left-container {
+    max-width: 750px;
+}
