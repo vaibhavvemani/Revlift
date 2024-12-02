@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
-.info-container hr {
-    border: 1px solid black;
-    height: 30em;
-    align-self: center;
-}
-.left-container hr {
-    border: 1px solid black;
-    height: 0px;
-    width: 30em;
-    align-self: center;
-}
 .display-container {
     font-family: 'Michroma', sans-serif;
     height: 100%;
@@ -54,9 +43,9 @@
 
 .info-container {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     margin: 23px 0;
 
     height: 100%;

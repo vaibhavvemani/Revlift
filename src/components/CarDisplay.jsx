@@ -33,10 +33,8 @@ export const CarDisplay = ( props ) => {
       <div className='info-container'>
         <div className="left-container">
           <img className='car-image' src="/911_GT3_RS.jpg" alt={car?.name}/>
-          {/* <hr></hr> */}
           <p className='description'>{car?.description}</p>
         </div>
-        {/* <hr></hr> */}
         <div className="right-container">
           <h2>Price: {car?.price}$</h2>
           <section className='power-info'></section>
