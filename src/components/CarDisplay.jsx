@@ -24,18 +24,23 @@ export const CarDisplay = ( props ) => {
   return (
     <div className="display-container">
       <div className='title-container'>
-        <h1>{car?.company}</h1>
-        <h2>{car?.name}</h2>
+        <Image className='logo' src="/porsche-logo.png" alt="Porsche Logo" width={860} height={992} />
+        <div className='title-text'>
+          <h1>{car?.company}</h1>
+          <h3>{car?.name}</h3>
+        </div>
       </div>
-      <div className="left-container">
-        <Image className='car-image' src="/911_GT3_RS.jpg" alt={car?.name} width={720} height={450} />
-        <p className='description'>{car?.description}</p>
-      </div>
-      <div className="right-container">
-        <h2>Price: {car?.price}$</h2>
-        <section className='power-info'></section>
-        <section className='speed-info'></section>
-        <section className='dimention-info'></section>
+      <div className='info-container'>
+        <div className="left-container">
+          <Image className='car-image' src="/911_GT3_RS.jpg" alt={car?.name} width={720} height={450} />
+          <p className='description'>{car?.description}</p>
+        </div>
+        <div className="right-container">
+          <h2>Price: {car?.price}$</h2>
+          <section className='power-info'></section>
+          <section className='speed-info'></section>
+          <section className='dimention-info'></section>
+        </div>
       </div>
     </div>
   )
