@@ -1,7 +1,29 @@
 .display-container {
     background-color: var(--main);
+    padding: 20px 30px;
+}
+
+.title-container {
+    height: 100px;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+
+.title-container h1 {
+    color: var(--white);
 }
 
 .left-container {
     max-width: 750px;
+}
+
+.description {
+    max-height: 100px;
+    overflow: scroll;
 }

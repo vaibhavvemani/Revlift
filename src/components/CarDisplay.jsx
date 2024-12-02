@@ -23,7 +23,10 @@ export const CarDisplay = ( props ) => {
 
   return (
     <div className="display-container">
-      <h1>{car?.name}</h1>
+      <div className='title-container'>
+        <h1>{car?.company}</h1>
+        <h2>{car?.name}</h2>
+      </div>
       <div className="left-container">
         <Image className='car-image' src="/911_GT3_RS.jpg" alt={car?.name} width={720} height={450} />
         <p className='description'>{car?.description}</p>
