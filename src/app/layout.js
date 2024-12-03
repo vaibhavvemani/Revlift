@@ -24,10 +24,10 @@ function LeftNav() {
   function RightNav() {
     return (
       <div className={styles.rightNav}>
-        <div className={`${styles.searchIcon} ${styles.headerIcon}`}>
+        {/* <div className={`${styles.searchIcon} ${styles.headerIcon}`}>
           <input className={styles.searchBar} type="text" placeholder="search"/>
           <Image src="/search.svg" alt="Search Icon" width={30} height={30} />
-        </div>
+        </div> */}
         <div className={`${styles.wishlistIcon} ${styles.headerIcon}`}>
           <Image src="/wishlist.svg" alt="Wishlist Icon" width={30} height={30} />
         </div>
@@ -50,8 +50,8 @@ const Header = ( { children } ) => {
     <html lang='en'>
       <body>
         <header className={styles.header}>
-          <LeftNav />
           <LogoNav />
+          <LeftNav />
           <RightNav />
         </header>
 
