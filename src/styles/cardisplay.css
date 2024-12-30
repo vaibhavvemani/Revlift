@@ -83,8 +83,10 @@
 }
 
 .right-container {
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     background-color: rgba(255, 255, 255, 0.171);
     min-width: 20em;
@@ -92,4 +94,24 @@
     flex-shrink: 1;
     flex-grow: 1;
     flex-basis: 0;
+}
+
+.car-info {
+    background-color:rgba(255, 255, 255, 0.26);
+    border: 2px solid black;
+    min-height: 100px;
+    height: 12rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-shrink: 1;
+}
+
+.info-tile {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10rem;
+
+    height: 10rem;
+    width: 10rem;
 }

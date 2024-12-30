@@ -37,9 +37,13 @@ export const CarDisplay = ( props ) => {
         </div>
         <div className="right-container">
           <h2>Price: {car?.price}$</h2>
-          <section className='power-info'></section>
-          <section className='speed-info'></section>
-          <section className='dimention-info'></section>
+          <section className='car-info'>
+            <div className='info-tile'></div>
+            <div className='info-tile'></div>
+            <div className='info-tile'></div>
+          </section>
+          <section className='car-info'></section>
+          <section className='car-info'></section>
         </div>
       </div>
     </div>
