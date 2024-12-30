@@ -61,7 +61,7 @@ function RightLanding() {
 const HomePage = () => {
   return (
     <div className="landing-page">
-        {/* <LeftLanding /> */}
+        <LeftLanding />
         <RightLanding />
     </div>
   )
