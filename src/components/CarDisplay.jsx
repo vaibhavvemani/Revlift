@@ -38,18 +38,65 @@ export const CarDisplay = ( props ) => {
         <div className="right-container">
           <h2>Price: {car?.price}$</h2>
           <section className='car-info'>
-            <div className='info-tile'>
-              <p>{car?.horsepower}</p>
+            <div className="info-box">
+              <div className='info-tile'>
+                <p>{car?.horsepower}</p>
+              </div>
+              <p>Power</p>
             </div>
-            <div className='info-tile'>
-              <p>{car?.torque}</p>
+            <div className='info-box'>
+              <div className='info-tile'>
+                <p>{car?.torque}</p>
+              </div>
+              <p>Torque</p>
             </div>
-            <div className='info-tile'>
-              <p>{car?.acceleration}</p>
+            <div className='info-box'>
+              <div className='info-tile'>
+                <p>{car?.engine}</p>
+              </div>
+              <p>Engine</p>
             </div>
           </section>
-          <section className='car-info'></section>
-          <section className='car-info'></section>
+          <section className='car-info'>
+            <div className="info-box">
+              <div className='info-tile'>
+                <p>{car?.top_speed}</p>
+              </div>
+              <p>Speed</p>
+            </div>
+            <div className='info-box'>
+              <div className='info-tile'>
+                <p>{car?.acceleration}</p>
+              </div>
+              <p>0-60</p>
+            </div>
+            <div className='info-box'>
+              <div className='info-tile'>
+                <p>{car?.weight}</p>
+              </div>
+              <p>Weight</p>
+            </div>
+          </section>
+          <section className='car-info'>
+            <div className="info-box">
+              <div className='info-tile'>
+                <p>{car?.width}</p>
+              </div>
+              <p>width</p>
+            </div>
+            <div className='info-box'>
+              <div className='info-tile'>
+                <p>{car?.height}</p>
+              </div>
+              <p>height</p>
+            </div>
+            <div className='info-box'>
+              <div className='info-tile'>
+                <p>{car?.length}</p>
+              </div>
+              <p>Length</p>
+            </div>
+          </section>
         </div>
       </div>
     </div>
