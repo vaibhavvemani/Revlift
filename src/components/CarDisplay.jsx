@@ -14,12 +14,16 @@ export const CarDisplay = ( props ) => {
         .select()
         .eq('name', props.car)
       setData(data)
-      console.log(data)
     }
     fetchData()
+    
   }, [props.car])
   
   let car = data[0]
+  const price = car?.price.toLocaleString('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  })
 
   return (
     <div className="display-container">
@@ -36,7 +40,7 @@ export const CarDisplay = ( props ) => {
           <p className='description'>{car?.description}</p>
         </div>
         <div className="right-container">
-          <h2>Price: {car?.price}$</h2>
+          <h2>Price: {price}$</h2>
           <section className='car-info'>
             <div className="info-box">
               <div className='info-tile'>
